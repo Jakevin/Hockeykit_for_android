@@ -19,6 +19,7 @@ HockeyKit 只有提供最新版本在Web端給測試人員下載，對於跨版�
 1.請先參考 
 「Android」輕鬆架一個測試平台 HockeyKit + LionFree（上）
 http://123android.blogspot.tw/2014/10/android-hockeykit-lionfree.html
+
 2.接著參考
 「Android」輕鬆架一個測試平台 HockeyKit + LionFree（下）
 
