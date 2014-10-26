@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Auth"
+AuthUserFile HockeyKit/public/stats/.htpasswd
+Require valid-user
