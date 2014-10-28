@@ -28,4 +28,4 @@ http://123android.blogspot.tw/2014/10/android-hockeykit-lionfree.html
 * 黃立宇(Mike) 指導PHP寫作
 
 # 參考來源
-* HokeyKit by TheRealKerni (https://github.com/TheRealKerni/HockeyKit)
+* HockeyKit by TheRealKerni (https://github.com/TheRealKerni/HockeyKit)
