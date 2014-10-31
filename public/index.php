@@ -80,8 +80,6 @@ DeviceDetector::detect();
                             continue;
                         ?>
 
-                        
-
                         <div class="version">
                             <p class="borderbottom"></p>
                             <a name="<?php echo $app[AppUpdater::INDEX_APP] ?>"><br/></a>
@@ -89,6 +87,8 @@ DeviceDetector::detect();
                             <img class="icon" src="<?php echo $b.$app[AppUpdater::INDEX_IMAGE] ?>">
                             <?php } ?>
                             <h2><?php echo $app[AppUpdater::INDEX_APP] ?></h2>
+                            <a class="button" href="<?php echo $b.$app[AppUpdater::INDEX_DIR] ."/index.php"  ?>">List All</a>
+                    <p><br/><br/></p>
                             <p><b>Version:</b>
                                 <?php
                                 if ($app[AppUpdater::INDEX_SUBTITLE]) {

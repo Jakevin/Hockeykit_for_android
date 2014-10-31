@@ -15,6 +15,10 @@ foreach ($pre_app as $apk) {
     $app = $apk;
 }
 
+usort($pre_app, function($currentAry, $nextAry) {
+    return -strnatcmp($currentAry["path"], $nextAry["path"]);
+});
+
 $path = $_SERVER[PHP_SELF];
 
 $path_parts = pathinfo($path);  //這邊的$path_parts會是一個陣列，裡面的元素就是我們要的資訊。
@@ -38,6 +42,8 @@ function list_apk($dir){
 }
 
 
+
+
 ?>
 <html>
 <head><title></title>
@@ -59,9 +65,11 @@ function list_apk($dir){
 
         <table  Border="10" CellSpacing="10" CellPadding="10">
         <?php 
+
+
+
             foreach ($pre_app as $apk) {
                 echo '<tr><td><div class="column span-6">';
-                echo '<b>Released:</b> '. date('Y/m/d A h:i:s', $apk[AppUpdater::INDEX_DATE]). '</br>';
                 echo '<b>Size:</b>' . round($apk[AppUpdater::INDEX_APPSIZE] / 1024 / 1024, 1) . " MB<br/>";
                 echo '<a  class="button" href="'.$apk["path"].'"> Download '.$apk[AppUpdater::INDEX_SUBTITLE] . '(' . $apk[AppUpdater::INDEX_VERSION] . ')</a></br></div>';
                 echo '</td></tr>';
