@@ -22,7 +22,7 @@ http://123android.blogspot.tw/2014/10/android-hockeykit-lionfree.html
 
 2.接著參考
 「Android」輕鬆架一個測試平台 HockeyKit + LionFree（下）
-
+http://123android.blogspot.tw/2014/12/android-hockeykit-lionfree.html
 
 # 感謝
 * 黃立宇(Mike) 指導PHP寫作
